@@ -6,8 +6,6 @@ document.body.classList.add("no-motion");
 root.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
 window.setTimeout(() => document.body.classList.remove("no-motion"), 100);
 
-document.getElementById("year").textContent = new Date().getFullYear();
-
 document.querySelector("[data-theme-toggle]").addEventListener("click", () => {
   const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
   root.dataset.theme = nextTheme;
@@ -42,19 +40,18 @@ document.querySelectorAll(".filter-button").forEach((button) => {
   });
 });
 
-const email = "rucha.khartadkar123@gmail.com";
-const note = document.querySelector(".form-note");
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.16 }
+);
 
-document.querySelector("[data-copy-email]").addEventListener("click", async () => {
-  await navigator.clipboard.writeText(email);
-  note.textContent = "Email copied.";
-});
-
-document.getElementById("contactForm").addEventListener("submit", (event) => {
-  event.preventDefault();
-  const form = new FormData(event.currentTarget);
-  const name = encodeURIComponent(form.get("name"));
-  const message = encodeURIComponent(form.get("message"));
-  window.location.href = `mailto:${email}?subject=Portfolio enquiry from ${name}&body=${message}`;
-  note.textContent = "Opening your email app.";
+document.querySelectorAll(".reveal").forEach((section) => {
+  revealObserver.observe(section);
 });
