@@ -5,140 +5,307 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Portfolio for Rucha Khartadkar, focused on data management, analytics, and practical data workflows."
+      content="Rucha Khartadkar portfolio: data engineering, analytics, cloud migration, ETL, BigQuery, Airflow, and business insight work."
     >
-    <title>Rucha Khartadkar | Portfolio</title>
+    <title>Rucha Khartadkar | Data Engineer & Analyst</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Rucha portfolio home">RK</a>
       <nav aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme">
+        <span aria-hidden="true">T</span>
+      </button>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Data management and analytics portfolio</p>
+          <p class="eyebrow">Data Engineer & Data Analyst</p>
           <h1>Rucha Khartadkar</h1>
           <p class="lede">
-            I build organized, reliable data workflows that turn raw information
-            into useful analysis, clean databases, and decisions people can trust.
+            I turn complex operational data into reliable pipelines, clear analysis,
+            and revenue-impacting decisions across energy, cloud migration, and
+            ecommerce data systems.
           </p>
-          <div class="hero-actions" aria-label="Portfolio actions">
-            <a class="button primary" href="#work">View projects</a>
-            <a class="button secondary" href="mailto:rucha.khartadkar123@gmail.com">Email me</a>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#projects">View work</a>
+            <a class="button secondary" href="#contact">Contact me</a>
           </div>
         </div>
-        <div class="hero-panel" aria-label="Portfolio highlights">
-          <div>
-            <span class="metric">SQL</span>
-            <p>Schema design, relational modeling, and query-ready structures.</p>
+
+        <aside class="profile-card" aria-label="Profile snapshot">
+          <div class="portrait" aria-label="Profile photo placeholder">
+            <span>RK</span>
           </div>
           <div>
-            <span class="metric">ETL</span>
-            <p>Repeatable data loading, transformation, and pipeline thinking.</p>
+            <p class="profile-name">Rucha Khartadkar</p>
+            <p class="profile-role">London, United Kingdom</p>
           </div>
-          <div>
-            <span class="metric">R</span>
-            <p>Data preparation, analysis scripts, and reproducible outputs.</p>
+          <div class="quick-stats">
+            <div>
+              <strong>4+</strong>
+              <span>years experience</span>
+            </div>
+            <div>
+              <strong>500K+</strong>
+              <span>customer accounts analysed</span>
+            </div>
+            <div>
+              <strong>40%</strong>
+              <span>runtime improvement</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section intro-grid" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Analytics-minded engineer with a delivery-first approach.</h2>
+        </div>
+        <div class="about-panel">
+          <p>
+            I have worked across cloud data migration, ETL development, revenue
+            assurance, process improvement, and stakeholder-facing analytics. My
+            work sits where data architecture meets business decisions: clean
+            pipelines, trusted reporting, and measurable operational improvement.
+          </p>
+          <div class="focus-list" aria-label="Professional focus areas">
+            <span>Revenue assurance</span>
+            <span>Cloud data migration</span>
+            <span>ETL automation</span>
+            <span>Data quality</span>
+            <span>Dashboarding</span>
+            <span>Root-cause analysis</span>
           </div>
         </div>
       </section>
 
-      <section class="section" id="work">
-        <div class="section-heading">
-          <p class="eyebrow">Selected work</p>
-          <h2>Projects</h2>
+      <section class="section strengths">
+        <div class="section-heading compact">
+          <p class="eyebrow">Strengths</p>
+          <h2>How I create value</h2>
         </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Database Design</span>
-              <span>SQL</span>
+        <div class="strength-grid">
+          <article>
+            <span>01</span>
+            <h3>Build dependable pipelines</h3>
+            <p>Automated refreshes with Airflow, Composer, Dataform, and SQL logic that reduces manual effort.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Translate business problems</h3>
+            <p>Partner with Finance, Pricing, Operations, Smart Metering, Engineering, and Support teams.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Improve performance</h3>
+            <p>Optimise multi-million row datasets through query tuning, partitioning, and efficient joins.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Recent roles</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item is-open">
+            <button type="button" class="timeline-trigger" aria-expanded="true">
+              <span>
+                <strong>Data Analyst</strong>
+                <em>OVO Energy &middot; Apr 2025 - Current</em>
+              </span>
+              <span aria-hidden="true">+</span>
+            </button>
+            <div class="timeline-content">
+              <p>
+                Delivered analytics and revenue assurance controls across 500K+
+                customer accounts, identifying billing, debt, tariff, and metering
+                discrepancies.
+              </p>
+              <ul>
+                <li>Designed and optimised 15+ BigQuery SQL workflows.</li>
+                <li>Built 10+ automated pipelines with Cloud Composer and Airflow.</li>
+                <li>Reduced reporting runtimes by up to 40% and manual effort by 15+ hours weekly.</li>
+              </ul>
             </div>
-            <h3>Tesco Data Management</h3>
-            <p>
-              Designed a relational database structure for ecommerce operations,
-              including customers, addresses, products, inventory, orders,
-              transactions, reviews, suppliers, and shippers.
-            </p>
-            <a href="https://github.com/rucha1101/Data-Management" target="_blank" rel="noreferrer">
-              View repository
-            </a>
           </article>
 
-          <article class="project-card">
-            <div class="project-topline">
+          <article class="timeline-item">
+            <button type="button" class="timeline-trigger" aria-expanded="false">
+              <span>
+                <strong>Business Analyst</strong>
+                <em>Blackmont Consulting &middot; Sep 2024 - Feb 2025</em>
+              </span>
+              <span aria-hidden="true">+</span>
+            </button>
+            <div class="timeline-content">
+              <p>
+                Analysed business datasets with SQL and Python, built monthly
+                reporting, and supported change delivery through workshops,
+                impact assessment, and gap analysis.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <button type="button" class="timeline-trigger" aria-expanded="false">
+              <span>
+                <strong>Data Engineer</strong>
+                <em>Datametica Solutions &middot; Feb 2021 - Aug 2023</em>
+              </span>
+              <span aria-hidden="true">+</span>
+            </button>
+            <div class="timeline-content">
+              <p>
+                Executed database migrations from Netezza and Oracle to Google
+                Cloud with BigQuery, Composer, Cloud Data Fusion, dbt architecture,
+                and CI/CD practices.
+              </p>
+              <ul>
+                <li>Improved data speed by 40%.</li>
+                <li>Reduced migration costs by 25%.</li>
+                <li>Collaborated with technical and non-technical stakeholders.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected work</h2>
+        </div>
+        <div class="filter-bar" aria-label="Project filters">
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="data">Data engineering</button>
+          <button class="filter-button" type="button" data-filter="analytics">Analytics</button>
+          <button class="filter-button" type="button" data-filter="ml">Machine learning</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" data-category="data">
+            <div class="project-meta">
+              <span>SQL</span>
+              <span>Database design</span>
+            </div>
+            <h3>Database Design and Data Management for E-Commerce</h3>
+            <p>
+              Designed an ER diagram and relational schema for an ecommerce system,
+              supported by a synthetic dataset of 100,000+ records.
+            </p>
+            <a href="https://github.com/rucha1101/Data-Management" target="_blank" rel="noreferrer">Open project</a>
+          </article>
+
+          <article class="project-card" data-category="data">
+            <div class="project-meta">
+              <span>Airflow</span>
               <span>Pipeline</span>
-              <span>GitHub Actions</span>
             </div>
             <h3>ETL Workflow Automation</h3>
             <p>
-              Maintained workflow automation for generated database and figure
-              outputs, keeping pipeline artifacts tracked when data refreshes run.
+              Maintained automated workflow outputs for database refreshes and
+              generated figures, improving collaboration and change tracking.
             </p>
-            <a href="https://github.com/rucha1101/Data-Management/pull/8" target="_blank" rel="noreferrer">
-              See workflow change
-            </a>
+            <a href="https://github.com/rucha1101/Data-Management/pull/8" target="_blank" rel="noreferrer">View workflow</a>
           </article>
 
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Data Loading</span>
-              <span>R</span>
+          <article class="project-card" data-category="ml analytics">
+            <div class="project-meta">
+              <span>LLMs</span>
+              <span>Sentiment analysis</span>
             </div>
-            <h3>Data Load Refinement</h3>
+            <h3>Movie Review Sentiment Analysis</h3>
             <p>
-              Updated R-based loading scripts to improve correctness and keep
-              generated tables aligned with source data and schema requirements.
+              Built an LLM-supported sentiment pipeline on 250 IMDB reviews,
+              reaching 90% accuracy with XLNet and evaluating PEGASUS summarisation.
             </p>
-            <a href="https://github.com/rucha1101/Data-Management/pulls?q=is%3Apr+data_load.R" target="_blank" rel="noreferrer">
-              Review changes
-            </a>
           </article>
         </div>
       </section>
 
-      <section class="section split" id="skills">
-        <div class="section-heading">
-          <p class="eyebrow">Capabilities</p>
-          <h2>What I work with</h2>
+      <section class="section credentials">
+        <div>
+          <p class="eyebrow">Education</p>
+          <h2>Warwick Business School</h2>
+          <p>MSc Business Analytics, Merit &middot; Predictive Modelling, Forecasting, Finance Analytics, R and Python.</p>
         </div>
-        <div class="skill-list" aria-label="Skills">
+        <div>
+          <p class="eyebrow">Certifications</p>
+          <h2>Google Cloud Professional Data Engineer</h2>
+          <p>Also pursuing Azure Fundamentals training.</p>
+        </div>
+      </section>
+
+      <section class="section skill-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Toolbox</p>
+          <h2>Skills</h2>
+        </div>
+        <div class="skill-cloud" aria-label="Skills">
           <span>SQL</span>
+          <span>BigQuery</span>
+          <span>GCP</span>
+          <span>AWS S3</span>
+          <span>Airflow</span>
+          <span>Dataform</span>
+          <span>Tableau</span>
+          <span>Power BI</span>
+          <span>Python</span>
           <span>R</span>
-          <span>ETL</span>
-          <span>Data modeling</span>
-          <span>GitHub Actions</span>
-          <span>Data cleaning</span>
-          <span>Relational databases</span>
-          <span>Documentation</span>
+          <span>Informatica</span>
+          <span>Oracle</span>
+          <span>Unix</span>
+          <span>Alteryx</span>
+          <span>Jira</span>
+          <span>GitHub</span>
         </div>
       </section>
 
       <section class="contact" id="contact">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Let us build something useful from the data.</h2>
+          <h2>Let us turn messy data into something decision-ready.</h2>
+          <p>Based in London, available for data analyst and data engineering opportunities.</p>
         </div>
-        <a class="button primary" href="mailto:rucha.khartadkar123@gmail.com">rucha.khartadkar123@gmail.com</a>
+        <form class="contact-form" id="contactForm">
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="button primary" type="submit">Send email</button>
+            <button class="button secondary" type="button" data-copy-email>Copy email</button>
+          </div>
+          <p class="form-note" aria-live="polite"></p>
+        </form>
       </section>
     </main>
 
     <footer>
       <p>&copy; <span id="year"></span> Rucha Khartadkar</p>
-      <a href="https://github.com/rucha1101" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="mailto:rucha.khartadkar123@gmail.com">rucha.khartadkar123@gmail.com</a>
     </footer>
 
     <script src="script.js"></script>
