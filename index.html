@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Portfolio for Rucha Khartadkar, focused on data management, analytics, and practical data workflows."
+    >
+    <title>Rucha Khartadkar | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Rucha portfolio home">RK</a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Data management and analytics portfolio</p>
+          <h1>Rucha Khartadkar</h1>
+          <p class="lede">
+            I build organized, reliable data workflows that turn raw information
+            into useful analysis, clean databases, and decisions people can trust.
+          </p>
+          <div class="hero-actions" aria-label="Portfolio actions">
+            <a class="button primary" href="#work">View projects</a>
+            <a class="button secondary" href="mailto:rucha.khartadkar123@gmail.com">Email me</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Portfolio highlights">
+          <div>
+            <span class="metric">SQL</span>
+            <p>Schema design, relational modeling, and query-ready structures.</p>
+          </div>
+          <div>
+            <span class="metric">ETL</span>
+            <p>Repeatable data loading, transformation, and pipeline thinking.</p>
+          </div>
+          <div>
+            <span class="metric">R</span>
+            <p>Data preparation, analysis scripts, and reproducible outputs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-topline">
+              <span>Database Design</span>
+              <span>SQL</span>
+            </div>
+            <h3>Tesco Data Management</h3>
+            <p>
+              Designed a relational database structure for ecommerce operations,
+              including customers, addresses, products, inventory, orders,
+              transactions, reviews, suppliers, and shippers.
+            </p>
+            <a href="https://github.com/rucha1101/Data-Management" target="_blank" rel="noreferrer">
+              View repository
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span>Pipeline</span>
+              <span>GitHub Actions</span>
+            </div>
+            <h3>ETL Workflow Automation</h3>
+            <p>
+              Maintained workflow automation for generated database and figure
+              outputs, keeping pipeline artifacts tracked when data refreshes run.
+            </p>
+            <a href="https://github.com/rucha1101/Data-Management/pull/8" target="_blank" rel="noreferrer">
+              See workflow change
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span>Data Loading</span>
+              <span>R</span>
+            </div>
+            <h3>Data Load Refinement</h3>
+            <p>
+              Updated R-based loading scripts to improve correctness and keep
+              generated tables aligned with source data and schema requirements.
+            </p>
+            <a href="https://github.com/rucha1101/Data-Management/pulls?q=is%3Apr+data_load.R" target="_blank" rel="noreferrer">
+              Review changes
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Capabilities</p>
+          <h2>What I work with</h2>
+        </div>
+        <div class="skill-list" aria-label="Skills">
+          <span>SQL</span>
+          <span>R</span>
+          <span>ETL</span>
+          <span>Data modeling</span>
+          <span>GitHub Actions</span>
+          <span>Data cleaning</span>
+          <span>Relational databases</span>
+          <span>Documentation</span>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let us build something useful from the data.</h2>
+        </div>
+        <a class="button primary" href="mailto:rucha.khartadkar123@gmail.com">rucha.khartadkar123@gmail.com</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Rucha Khartadkar</p>
+      <a href="https://github.com/rucha1101" target="_blank" rel="noreferrer">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
