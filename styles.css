@@ -372,15 +372,15 @@ h3 {
 .portrait img {
   height: 100%;
   object-fit: cover;
-  object-position: 50% 38%;
-  transform: scale(1.28);
+  object-position: 50% 50%;
+  transform: scale(1.02);
   transition: filter 220ms ease, transform 260ms ease;
   width: 100%;
 }
 
 .profile-card:hover .portrait img {
   filter: saturate(1.08) contrast(1.02);
-  transform: scale(1.36);
+  transform: scale(1.08);
 }
 
 .profile-details {
